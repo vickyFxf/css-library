@@ -1,0 +1,94 @@
+div {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 1px solid red;
+  border-radius: 2px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+/* box-shadow: h-shadow v-shadow blur sspread color inset; */
+
+/* 1. 水平-内阴影 */
+#horiz-inside-shaodow {
+  box-shadow: inset 3px 0 2px 2px red, inset 3px 0 2px 2px red;
+}
+
+/* 2. 水平-外阴影 */
+#vertical-outside-shaodow {
+  box-shadow: inset 0 0 2px 2px red;
+}
+
+/* 3. 垂直-内阴影 */
+#vertical-inside-shaodow {
+  
+}
+
+/* 4. 垂直-外阴影 */
+#vertical-outside-shaodow {
+  
+}
+
+/* 5. 外阴影 */
+#outside-shaodow {
+  box-shadow: 0 0 2px 2px red;
+}
+
+/* 6. 内阴影 */
+#inside-shaodow {
+  box-shadow: inset 0 0 2px 2px red;
+}
+
+/* 7. 左-内阴影 */
+#left-inside-shaodow {
+  
+}
+
+/* 8. 左-外阴影 */
+#left-outside-shaodow {
+  
+}
+
+/* 9. 右-内阴影 */
+#right-inside-shaodow {
+  
+}
+
+/* 10. 右-外阴影 */
+#right-outside-shaodow {
+  
+}
+
+/* 11. 上-内阴影 */
+#top-inside-shaodow {
+  
+}
+
+/* 12. 上-外阴影 */
+#top-outside-shaodow {
+  
+}
+
+/* 13. 下-内阴影 */
+#bottom-inside-shaodow {
+  
+}
+
+/* 14. 下-外阴影 */
+#bottom-outside-shaodow {
+  
+}
+
+/* 15. 双边-内阴影 */
+#double-inside-shaodow {
+  
+}
+
+/* 16. 双边-外阴影 */
+#double-outside-shaodow {
+  
+}
