@@ -1,0 +1,505 @@
+/* 正方形 */
+#square {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+}
+
+/* 长方形 */
+#rectangle {
+  width: 120px;
+  height: 80px;
+  background-color: red;
+}
+
+/* 圆形 */
+#circular {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+/* 椭圆形 */
+#oval {
+  width: 120px;
+  height: 80px;
+  border-radius: 60px/40px;
+  background-color: red;
+}
+
+/* 向上三角形 */
+#triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+
+/* 向下三角形 */
+#triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid red;
+}
+
+/* 向左三角形 */
+#triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 100px solid red;
+}
+
+/* 向右三角形 */
+#triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 100px solid red;
+}
+
+/* 左上角三角形 */
+#triangle-top-left {
+  width: 0;
+  height: 0;
+  border-top: 100px solid red;
+  border-right: 100px solid transparent;
+}
+
+/* 右上角三角形 */
+#triangle-top-right {
+  width: 0;
+  height: 0;
+  border-top: 100px solid red;
+  border-left: 100px solid transparent;
+}
+
+/* 左下角三角形 */
+#triangle-bottom-left {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid red;
+  border-right: 100px solid transparent;
+}
+
+/* 右下角三角形 */
+#triangle-bottom-right {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid red;
+  border-left: 100px solid transparent;
+}
+
+/* 梯形 */
+#trapezoid {
+  width: 50px;
+  height: 0;
+  border-bottom: 50px solid red;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+/* 平行四边形 */
+#parallelogram {
+  width: 120px;
+  height: 80px;
+  transform: skewX(-20deg);
+  background-color: red;
+}
+
+/* 五角星 */
+#five-points {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: red;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+
+#five-points::before {
+  border-bottom: 80px solid red;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+}
+
+#five-points::after {
+  position: absolute;
+  display: block;
+  color: red;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+}
+
+/* 六角星 */
+#six-points {
+  width: 0;
+  height: 0;
+  border-top: 100px solid red;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  position: relative;
+}
+
+#six-points::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid red;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  top: -130px;
+}
+
+/* 五边形 */
+#pentagon {
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: red transparent;
+}
+
+#pentagon::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent red;
+}
+
+/* 六边形 */
+#hexagon {
+  width: 100px;
+  height: 55px;
+  background: red;
+  position: relative;
+}
+
+#hexagon::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid red;
+}
+
+#hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid red;
+}
+
+/* 八边形 */
+#octagon {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+}
+
+#octagon::before {
+  content: "";
+  width: 42px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 29px solid red;
+  border-left: 29px solid #ffffff;
+  border-right: 29px solid #ffffff;
+}
+
+#octagon::after {
+  content: "";
+  width: 42px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 29px solid red;
+  border-left: 29px solid #ffffff;
+  border-right: 29px solid #ffffff;
+}
+
+/* 心形 */
+#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+#heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+/* 无限 */
+#infinity {
+  position: relative;
+  width: 106px;
+  height: 100px;
+  box-sizing: content-box;
+}
+
+#infinity:before,
+#infinity:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 10px solid red;
+  border-radius: 50% 50% 0 50%;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#infinity:after {
+  transform: rotate(135deg);
+  left: auto;
+  right: 0;
+}
+
+/* 钻石 */
+#diamond-square {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  transform: rotate(45deg);
+}
+
+/* 钻石盾牌 */
+#diamond-shield {
+  width: 0;
+  height: 0;
+  border: 30px solid transparent;
+  border-top: 60px solid red;
+  position: relative;
+}
+
+#diamond-shield::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 30px solid transparent;
+  border-bottom: 20px solid red;
+  position: absolute;
+  left: -30px;
+  top: -110px;
+}
+
+/* 钻石狭窄*/
+#diamond-narrow {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 70px solid red;
+  position: relative;
+  top: -50px;
+}
+
+#diamond-narrow::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 70px solid red;
+  position: absolute;
+  top: 70px;
+  left: -50px;
+}
+
+/* 钻石切割 */
+#cut-diamond {
+  width: 50px;
+  height: 0;
+  border-bottom: 40px solid red;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+#cut-diamond::before {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: 100px solid red;
+  border-left: 65px solid transparent;
+  border-right: 65px solid transparent;
+  position: absolute;
+  top: 40px;
+  left: -40px;
+}
+
+/* 鸡蛋 */
+#egg {
+  display: block;
+  width: 100px;
+  height: 140px;
+  background-color: red;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+/* 吃豆人 */
+#pac-man {
+  width: 0;
+  height: 0;
+  border: 50px solid red;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+
+/* 对话框 */
+#talk-bubble {
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: red;
+  position: relative;
+}
+
+#talk-bubble::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 7px solid red;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  position: absolute;
+  top: 13px;
+  left: -7px;
+}
+
+/* 阴阳 */
+#yin-yang {
+  width: 96px;
+  box-sizing: content-box;
+  height: 48px;
+  background: #eee;
+  border-color: red;
+  border-style: solid;
+  border-width: 2px 2px 50px 2px;
+  border-radius: 100%;
+  position: relative;
+}
+
+#yin-yang::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: #eee;
+  border: 18px solid red;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  box-sizing: content-box;
+}
+
+#yin-yang::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: red;
+  border: 18px solid #eee;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  box-sizing: content-box;
+}
+
+/* 爆炸形状 */
+#point-burst {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+}
+
+#point-burst::after,
+#point-burst::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#point-burst::after {
+  transform: rotate(60deg);
+}
+
+#point-burst::before {
+  transform: rotate(30deg);
+}
