@@ -15,7 +15,7 @@ h3 {
 
 /* 1. 水平-内阴影 */
 #horiz-inside-shaodow {
-  box-shadow: inset 3px 0 2px 2px red, inset 3px 0 2px 2px red;
+  box-shadow: -10px 10px 2px red;
 }
 
 /* 2. 水平-外阴影 */
